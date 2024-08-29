@@ -40,6 +40,6 @@ export const MessageInput = styled("input")`
     font-weight: 400;
     font-size: 1.2rem;
     position: fixed;
-    bottom: 0;
+    bottom: 5%;
 
 `
