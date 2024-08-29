@@ -1,6 +1,6 @@
-import { KeyboardEventHandler, useEffect, useState } from "react"
+import {  useEffect, useState } from "react"
 import { MessageContainer, MessageInput, WebhookMessageBox } from "./styles";
-import { Input, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import axios from "axios";
 
 interface WebhookMessage {
