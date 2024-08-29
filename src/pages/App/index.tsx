@@ -11,7 +11,7 @@ function App() {
   const [messages, setMessages] = useState<WebhookMessage[]>([]);
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket("wss://chatbackend-m9rr.onrender.com");
 
     ws.onopen = () => {
       console.log('Connected to server!');
@@ -34,7 +34,7 @@ function App() {
 
   const handleMessageSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
-      axios.post("http://localhost:8080/webhook", {
+      axios.post("https://chatbackend-m9rr.onrender.com/webhook", {
         message: (event.target as HTMLInputElement).value
       })
     }
