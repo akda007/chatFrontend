@@ -42,8 +42,8 @@ function App() {
 
   return (
     <>
-      <Stack height={"100vh"} alignItems={"center"} justifyContent={"space-between"} paddingTop={4} paddingBottom={4}>
-        <Stack height={"90%"} width={"100%"} alignItems={"center"} justifyContent={"center"}>
+      <Stack height={"100vh"} alignItems={"center"} justifyContent={"space-between"} paddingTop={4} paddingBottom={4} position={"relative"}>
+        <Stack height={"80%"} width={"100%"} alignItems={"center"} justifyContent={"center"}>
           <MessageContainer className="masked-overflow" >
             {messages.map((msg, index) => 
               <WebhookMessageBox key={index}>{msg.message}</WebhookMessageBox>

@@ -39,5 +39,7 @@ export const MessageInput = styled("input")`
     border: 1px solid gray;
     font-weight: 400;
     font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
 
 `
